@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    background-color:  #0e00d5;
+    color: white;
+    padding: 20px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.two.columns {
+    width: 20%;
+   
+
+}
+
+.u-pull-right {
+    float: right;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+nav ul {
+    background-color: rgb(243, 232, 77);
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover {
+    background-color: #0e00d5;
+}
+
+.container {
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid  #0e00d5;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background: #0e00d5;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+
+
+.container:hover input {
+	width: 350px;
+}
+
+.container:hover i{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: #0e00d5;
+}
+
+.producto {
+    border-top: 1px solid rgba(230, 230, 230, 0.795);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;    
+}
+
+.producto > img{
+    max-width: 280px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px; 
+}
+
+.informacion{
+    border-top: 1px solid rgba(230, 230, 230, 0.795);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+}
+
+.informacion * + * {
+    margin-bottom: 0.5em;
+}
+
+.marca{
+    font-size: 2em;
+}
+
+.modelo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.precio{
+    font-size: 1.5em;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: white;
+    box-shadow: 1px 7px 25px rgb(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+}
+
+.contenedor header{
+    padding: 10px;
+    background: blue;
+    color: #fff;
+}
+
+.contenedor label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: "#fff";
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#btn-modal{
+    display: none;
+}
+
+.lbl-modal{
+    background: blue;
+    padding: 10px 15px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.btn-modal{
+    position: absolute;
+    top: 80%;
+    right: 80%;
+
+    background: blue;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer{
+    width:100%;
+    background-color: #0e00d5 ;
+}
+
+.footer .grupo-1{
+    width:100%;
+    max-width:1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px; 
+}
+
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height:45px;
+    line-height:45px;
+    color:white;
+    margin-right:10px;
+    background-color:#0d2033;
+    text-align:center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover{
+    color: yellow;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: grey;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
